@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="main.js"></script>
+    <script src="marked.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Drum Machine</title>
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+    <div id="drum-machine" class="container">
+      <div class="row display-row">
+          <div class="card" >
+              <div class="card-body" id="display">
+                Press a key to see the audio name!
+              </div>
+            </div>
+        </div>
+          <!--<div class="btn-group" role="group" aria-label="drum machine buttons">-->
+        <div class="row">
+            <div class="card" >
+                <div class="card-body">
+                    <div class="group">
+                    <button value="PLAY" onclick="play('Q')" type="button" id="q-pad" class="drum-pad btn btn-success">
+                        Q<audio id="Q" class="clip" src="audio/punchy_kick_1.mp3"></audio>
+                    </button>
+
+                    <button value="PLAY" onclick="play('W')" type="button" id="w-pad" class="drum-pad btn btn-success">
+                        W<audio id="W" class="clip" src="audio/Brk_Snr.mp3"></audio>
+                    </button>
+
+                    <button value="PLAY" onclick="play('E')"  type="button" id="e-pad" class="drum-pad btn btn-success">
+                        E<audio id="E" class="clip" src="audio/Bld_H1.mp3"></audio>
+                    </button>
+                </div>
+                <div class="group">
+                    <button value="PLAY" onclick="play('A')"  type="button" id="a-pad" class="drum-pad btn btn-success">
+                        A<audio id="A" class="clip" src="audio/Dsc_Oh.mp3"></audio>
+                    </button>
+
+                    <button value="PLAY" onclick="play('S')"  type="button" id="s-pad" class="drum-pad btn btn-success">
+                        S<audio id="S" class="clip" src="audio/Give_us_a_light.mp3"></audio>
+                    </button>
+
+                    <button value="PLAY" onclick="play('D')"  type="button" id="d-pad" class="drum-pad btn btn-success">
+                        D<audio id="D" class="clip" src="audio/side_stick_1.mp3"></audio>
+                    </button>
+                </div><div class="group">
+                    <button  value="PLAY" onclick="play('Z')" type="button" id="z-pad" class="drum-pad btn btn-success">
+                        Z<audio id="Z" class="clip" src="audio/punchy_kick_1.mp3"></audio>
+                    </button>
+
+                    <button  value="PLAY" onclick="play('X')" type="button" id="x-pad" class="drum-pad btn btn-success">
+                        X<audio id="X" class="clip" src="audio/Give_us_a_light.mp3"></audio>
+                    </button>
+
+                    <button value="PLAY" onclick="play('C')"  type="button" id="c-pad" class="drum-pad btn btn-success">
+                        C<audio id="C" class="clip" src="audio/Brk_Snr.mp3"></audio>
+                    </button>
+                </div>
+                    </div></div>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
